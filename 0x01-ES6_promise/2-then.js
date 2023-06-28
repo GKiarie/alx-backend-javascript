@@ -10,5 +10,7 @@ export default function handleResponseFromAPI(promise) {
       };
       return response;
     })
-    .catch(() => new Error());
+    .catch(() => {
+        return new Error()
+    });
 }
