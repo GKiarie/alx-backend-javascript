@@ -9,4 +9,8 @@ export default class Building {
   get sqft() {
     return this._sqft;
   }
+
+  evacuationWarningMessage() {
+    return `Evacuate slowly the ${this.floors} floors`;
+  }
 }
